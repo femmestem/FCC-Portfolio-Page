@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Christine Feaster">
+    <meta name="description" content="Web Development Portfolio">
+    <meta name="keywords" content="web developer, ruby, rails, javascript, freecodecamp">
+    <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Christine Feaster | Web Developer</title>
+</head>
+<body>
+    <div class="container">
+    <header>
+        <h1>Christine Feaster</h1>
+        <h2>// Web Developer</h2>
+    </header>
+        <nav role="navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <section id="portfolio">
+            <h1>Portfolio</h1>
+
+            <div class="project">
+                <img src="http://placehold.it/350x350" alt="" class="project-thumbnail">
+                <h2>Pomodoro Timer</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat voluptates dicta omnis tempora odio corrupti cumque quasi voluptatibus impedit amet, suscipit aperiam a! Ex, tempore, eos! At ad reprehenderit earum.</p>
+            </div>
+
+            <div class="project">
+                <img src="http://placehold.it/350x350" alt="" class="project-thumbnail">
+                <h2>Lead Capture App</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, neque sapiente corporis. Incidunt culpa, animi! Pariatur tenetur ab odit facere minus dolorum, aliquid ducimus asperiores, ipsum laboriosam perferendis, blanditiis dolorem.</p>
+            </div>
+
+            <div class="project">
+                <img src="http://placehold.it/350x350" alt="" class="project-thumbnail">
+                <h2>Showcase</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet tempora eum debitis veritatis vitae quisquam molestiae, placeat, numquam quaerat fuga veniam nesciunt facilis labore aliquid impedit a, expedita obcaecati optio.</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h1>Contact</h1>
+
+            <form role="form" id="contact-form" action="" method="POST">
+            <input type="hidden" name="_subject" value="Thanks for reaching out" />
+            <label for="name">Name:</label> <input type="text" name="name" required /> 
+            <label for="_replyto">Your Email:</label> <input type="email" name="_replyto" required /> 
+            <label for="message">Message:</label> <textarea form="contact-form" name="message" rows="6" wrap="soft" placeholder="Your message..." required /> </textarea>
+            <input type="text" name="_gotcha" style="display:none" />
+            <input type="hidden" name="_next" value="/" />
+            <button form="contact-form" type="submit" value="submit" />Send</button>
+        </section>
+
+    </div>
+</body>
+</html>

@@ -5,59 +5,80 @@
     <meta name="author" content="Christine Feaster">
     <meta name="description" content="Web Development Portfolio">
     <meta name="keywords" content="web developer, ruby, rails, javascript, freecodecamp">
+    <!-- Bootstrap Components -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Bootstrap Theme [Readable] -->
+    <link rel="stylesheet" href="https://bootswatch.com/readable/bootstrap.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Christine Feaster | Web Developer</title>
 </head>
 <body>
-    <div class="container">
-    <header>
-        <h1>Christine Feaster</h1>
-        <h2>// Web Developer</h2>
-    </header>
-        <nav role="navigation">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+    <div>
+        <nav class="nav navbar-fixed-top" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">
+                        Christine&nbsp;Feaster <small>// Web&nbsp;Developer</small>
+                    </a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </nav>
-
+    <div class="container">
+        
         <section id="portfolio">
-            <h1>Portfolio</h1>
+            <h1 class="page-header">Portfolio</h1>
+            <div class="row">
+                <div class="project">
+                    <img src="http://placehold.it/350x350" alt="" class="thumbnail">
+                    <h2>Pomodoro Timer</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat voluptates dicta omnis tempora odio corrupti cumque quasi voluptatibus impedit amet, suscipit aperiam a! Ex, tempore, eos! At ad reprehenderit earum.</p>
+                </div>
 
-            <div class="project">
-                <img src="http://placehold.it/350x350" alt="" class="project-thumbnail">
-                <h2>Pomodoro Timer</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat voluptates dicta omnis tempora odio corrupti cumque quasi voluptatibus impedit amet, suscipit aperiam a! Ex, tempore, eos! At ad reprehenderit earum.</p>
-            </div>
+                <div class="project">
+                    <img src="http://placehold.it/350x350" alt="" class="thumbnail">
+                    <h2>Lead Capture App</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, neque sapiente corporis. Incidunt culpa, animi! Pariatur tenetur ab odit facere minus dolorum, aliquid ducimus asperiores, ipsum laboriosam perferendis, blanditiis dolorem.</p>
+                </div>
 
-            <div class="project">
-                <img src="http://placehold.it/350x350" alt="" class="project-thumbnail">
-                <h2>Lead Capture App</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, neque sapiente corporis. Incidunt culpa, animi! Pariatur tenetur ab odit facere minus dolorum, aliquid ducimus asperiores, ipsum laboriosam perferendis, blanditiis dolorem.</p>
-            </div>
-
-            <div class="project">
-                <img src="http://placehold.it/350x350" alt="" class="project-thumbnail">
-                <h2>Showcase</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet tempora eum debitis veritatis vitae quisquam molestiae, placeat, numquam quaerat fuga veniam nesciunt facilis labore aliquid impedit a, expedita obcaecati optio.</p>
+                <div class="project">
+                    <img src="http://placehold.it/350x350" alt="" class="thumbnail">
+                    <h2>Showcase</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet tempora eum debitis veritatis vitae quisquam molestiae, placeat, numquam quaerat fuga veniam nesciunt facilis labore aliquid impedit a, expedita obcaecati optio.</p>
+                </div>
             </div>
         </section>
+    </div>
 
         <section id="contact">
-            <h1>Contact</h1>
-
-            <form role="form" id="contact-form" action="" method="POST">
-            <input type="hidden" name="_subject" value="Thanks for reaching out" />
-            <label for="name">Name:</label> <input type="text" name="name" required /> 
-            <label for="_replyto">Your Email:</label> <input type="email" name="_replyto" required /> 
-            <label for="message">Message:</label> <textarea form="contact-form" name="message" rows="6" wrap="soft" placeholder="Your message..." required /> </textarea>
-            <input type="text" name="_gotcha" style="display:none" />
-            <input type="hidden" name="_next" value="/" />
-            <button form="contact-form" type="submit" value="submit" />Send</button>
+        <div class="container">
+            <h1 class="page-header">Contact</h1>
+            <div class="form-group well">
+                <form role="form" id="contact-form" action="" method="POST">
+                <div class="form-group">
+                    <label for="name">Name:</label> <input class="form-control" type="text" name="name" required /> 
+                    <input class="form-control" type="hidden" name="_subject" value="Thanks for reaching out" />
+                </div>
+                <div class="form-group">
+                    <label for="_replyto">Your Email:</label>
+                    <input class="form-control" type="email" name="_replyto" required />
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea class="form-control" form="contact-form" name="message" rows="6" wrap="soft" placeholder="Your message..." required /> </textarea>
+                </div>
+                <input class="form-control" type="text" name="_gotcha" style="display:none" />
+                <input class="form-control" type="hidden" name="_next" value="/" />
+                <button form="contact-form" type="submit" value="submit" />Send</button>
+            </div>
+        </div>
         </section>
-
-    </div>
+</div>
 </body>
 </html>

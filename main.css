@@ -1,41 +1,32 @@
 body {   
-    /*background-image: url("https://c2.staticflickr.com/8/7011/6772941359_8d964a4337_b.jpg"); */
+    padding-top: 60px;
     background-image: url("https:////c2.staticflickr.com/8/7110/13821250455_60bffa9b1d_h.jpg"); 
     background-size: cover;
 }
 
-nav ul li {
-    display: inline-block;
-    list-style: none;
-    text-decoration: none;
+nav.nav {
+    background: #333;
 }
-nav a { text-decoration: none; }
 
-#portfolio div { 
-    width: 85%;
-    margin: auto;
+.navbar-brand {
+    color: #fff;
+    background: rgba(255,255,255,0.25);
 }
+
 .project {
     width: 350px;
     margin: auto;
     display: inline-block;
+    background: rgba(255,255,255,0.45);
+    border-radius: 10px;
 }
-img.project-thumbnail {
+.thumbnail {
     width: 350px;
     height: 350px;
 }
 
-#contact div {
-    width: 50%;
-    margin: auto;
-    background: white;
-}
-
-form input,
-form label,
-form button,
-form textarea {
-    display: block;
-    margin: 10px auto;
-    width: 50%;
+@media screen and (min-width: 768px) {
+    .project {
+        margin: 1em;
+    }
 }

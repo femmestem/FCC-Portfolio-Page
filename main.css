@@ -56,6 +56,8 @@ nav.nav {
     background: #E3E7E8;
 }
 
+.fa { color: #fff; }
+
 @media screen and (min-width: 480px) {
     .project {
         padding: 0 1em;
